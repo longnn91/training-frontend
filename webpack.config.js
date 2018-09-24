@@ -10,6 +10,11 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPluginConfig = new CopyWebpackPlugin([
+         {from:'./app/img',to:'img'}
+     ]);
+
 module.exports = {
   entry: './app/index.js',
   output: {
@@ -41,7 +46,7 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          { loader: "file-loader?name=[name].[ext]" }
+          { loader: "file-loader?name=img/[name].[ext]" }
         ]
       },
       {
@@ -55,5 +60,14 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [
+    HtmlWebpackPluginConfig,
+    CopyWebpackPluginConfig
+  ],
+  devServer: {
+    contentBase: '/dist',
+    historyApiFallback: true,
+    host: 'training-frontend.com',
+    port: 3000
+  }
 }

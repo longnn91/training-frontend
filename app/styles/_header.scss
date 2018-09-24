@@ -1,21 +1,88 @@
 .header {
   background: url('../img/header_background.jpeg') no-repeat center;
   background-size: cover;
-  height: 910px;
+  height: 100vh;
 
   &__container {
-    background: rgba(0,0,0,.2);
+    background: $overlay_color;
     height: 100%;
   }
 
   &__top {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid $white_line_color;
     &__info-box {
       font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: rgb(255, 255, 255);
+      color: $white_color;
       font-size: 11px;
       font-weight: bold;
       letter-spacing: 1px;
       text-transform: uppercase;
+    }
+    &__control-box {
+      &__item {
+        margin-left: 10px;
+      }
+      &__flag {
+       vertical-align: middle;
+       max-width: 20px;
+     }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 5%;
+    padding-top: 30px;
+    align-items: center;
+
+    &__logo {
+      flex-basis: 20%;
+      img {
+        max-height: 32px;
+      }
+    }
+
+    &__left {
+      flex-basis: 70%;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__right {
+      flex-basis: 30%;
+      display: flex;
+      justify-content: flex-end;
+
+      .fab {
+        margin-left: 30px;
+        font-size: 16px;
+        color: $white_color;
+      }
+    }
+
+    &__menu {
+      font-size: 11px;
+      color: $white_color;
+      font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      flex-basis: 80%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+
+      &__item {
+        display: inline-block;
+      }
     }
   }
 
