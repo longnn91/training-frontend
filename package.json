@@ -1,0 +1,9 @@
+{
+  "name": "shenlong",
+  "version": "1.0.0",
+  "description": "Neolab's trainning FrontEnd course.",
+  "main": "index.js",
+  "repository": "https://github.com/longnn91/training-frontend.git",
+  "author": "shenlong",
+  "license": "MIT"
+}
