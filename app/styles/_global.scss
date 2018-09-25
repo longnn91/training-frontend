@@ -17,6 +17,12 @@
     background: $blue_color;
   }
 
+  &--blue-trans {
+    border-color: $blue_color;
+    background: $white_color;
+    color: $blue_color;
+  }
+
   &--primary {
     &:hover {
       background: $blue_color;
@@ -26,5 +32,101 @@
   &--small {
     padding: 8px 18px;
     font-size: 10px;
+  }
+}
+
+.menu {
+  $root: &;
+  font-size: 11px;
+  color: $white_color;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  &__item {
+    display: inline-block;
+    padding-right: 5px;
+    position: relative;
+
+    // &:hover {
+    //   #{$root}__subnav {
+    //     display: grid;
+    //   }
+    // }
+
+    &:first-child {
+      #{$root}__subnav {
+        left: -190px;
+      }
+    }
+
+    &__link {
+      color:  $white_color;
+
+      &:hover {
+        height: 80px;
+        display: inline-block;
+      }
+
+      &:hover + #{$root}__subnav {
+        display: grid;
+      }
+    }
+
+    &--has-child {
+      &::after {
+        content: '';
+          display: inline-block;
+          border: 1px solid $white_color;
+          border-width: 0 1px 1px 0;
+          padding: 2px;
+          transform: rotate(45deg);
+          margin-left: 8px;
+          vertical-align: top;
+      }
+    }
+  }
+
+  &__subnav {
+    position: absolute;
+    top: 40px;
+    background: $white_color;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    transition: all 1s ease;
+    padding: 0 30px;
+
+    &:hover {
+      display: grid;
+    }
+
+    &__title {
+      font-weight: 700;
+      color: $black_color;
+      margin-bottom: 25px;
+    }
+
+    li > a {
+      color: $gray_color;
+      &:hover {
+        color: $black_color;
+      }
+    }
+
+    li {
+      margin-top: 16px;
+    }
+
+    &__col {
+      min-width: 240px;
+      padding: 10px 0;
+      padding-left: 30px;
+      margin: 0 20px;
+    }
   }
 }
