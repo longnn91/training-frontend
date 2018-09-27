@@ -33,12 +33,13 @@
           <div class="header__nav">
             <div class="header__nav__left">
               <div class="header__nav__logo">
-                <img src="img/logo-light.png"></img>
+                <img class="header__nav__logo__light" src="img/logo-light.png"></img>
+                <img class="header__nav__logo__dark" src="img/logo-dark.png"></img>
               </div>
               <ul class="menu">
                 <li class="menu__item menu__item--has-child">
                   <a class="menu__item__link" href="/">HOME PAGES</a>
-                  <ul class="menu__subnav">
+                  <ul class="menu__subnav menu__subnav--multi">
                     <div class="menu__subnav__col">
                       <p class="menu__subnav__title">Home Layouts</p>
                       <li><a href="/">Home Classic</a></li>
@@ -61,7 +62,7 @@
                       <li><a href="/">Home Agency</a></li>
                     </div>
                     <div class="menu__subnav__col">
-                      <a href="/" class="button button--blue-trans">BUILD YOUR OWN</a>
+                      <a href="/" class="button button--blue-trans mgb-15">BUILD YOUR OWN</a>
                       <a href="/" class="button button--lager button--blue">PURCHASE PIVOT</a>
                     </div>
                   </ul>
@@ -95,6 +96,11 @@
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-instagram"></i>
             </div>
+            <div class="header__nav__toogle" onclick="toogleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         <div class="header__main"></div>
       </div>
@@ -102,5 +108,15 @@
     </header>
     <footer></footer>
   </div>
+  <script type="text/javascript">
+    function toogleMenu() {
+        var menu = document.getElementsByClassName("menu")[0];
+        if (menu.style.display === "none") {
+            menu.style.display = "flex";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+  </script>
 </body>
 </html>

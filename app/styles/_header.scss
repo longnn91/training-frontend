@@ -9,7 +9,7 @@
   }
 
   &__container {
-    max-width: 1200px;
+    max-width: $max-width;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -42,12 +42,17 @@
   &__nav {
     display: flex;
     padding-top: 30px;
-    align-items: center;
+    align-items: flex-start;
 
     &__logo {
       flex-basis: 20%;
+      margin-top: -8px;
       img {
         max-height: 32px;
+      }
+
+      &__dark {
+        display: none;
       }
     }
 
@@ -55,7 +60,17 @@
       flex-basis: 70%;
       display: inline-flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+    }
+
+    &__toogle {
+      display: none;
+      span {
+        display: block;
+        width: 20px;
+        border-bottom: 2px solid $black_color;
+        margin-bottom: 4px;
+      }
     }
 
     &__right {
