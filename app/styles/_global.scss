@@ -34,6 +34,16 @@
     }
   }
 
+  &--white {
+    border-color: $white_color;
+    color: $white_color;
+
+    &:hover {
+      background: $white_color;
+      color: $black_color;
+    }
+  }
+
   &--small {
     padding: 8px 18px;
     font-size: 10px;
@@ -132,5 +142,21 @@
         min-width: 290px;
       }
     }
+  }
+}
+
+.text {
+  &__impress {
+    font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__big {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 300;
   }
 }

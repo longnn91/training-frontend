@@ -12,6 +12,9 @@
     max-width: $max-width;
     padding: 0 15px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__top {
@@ -86,4 +89,14 @@
     }
   }
 
+  &__main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: $white_color;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 10%;
+  }
 }

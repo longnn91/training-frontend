@@ -1,0 +1,11 @@
+.pure-text {
+  background: $gray_background_color;
+  text-align: center;
+
+  &__container {
+    padding: 60px 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+}
