@@ -44,3 +44,50 @@
     }
   }
 }
+
+.video-inline {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 6%;
+  background: $gray_background_color;
+  grid-gap: 50px;
+
+  &__left {
+    p {
+      line-height: 30px;
+    }
+  }
+
+  &__right {
+    video {
+      max-width: 100%;
+    }
+  }
+}
+
+.footer {
+  background: $navi_background_color;
+  &__top,
+  &__bot {
+    padding: 4% 6%;
+    color: $white_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__icon {
+      i {
+        margin: 15px;
+        font-size: 26px;
+      }
+    }
+
+    &__menu {
+      a {
+        margin: 15px;
+        color: $white_color;
+      }
+    }
+  }
+}

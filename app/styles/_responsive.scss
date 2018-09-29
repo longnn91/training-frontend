@@ -95,6 +95,16 @@
     }
   }
 
+  .video-inline {
+    grid-template-columns: auto;
+  }
+
+  .footer {
+    .button {
+      margin-top: 30px;
+    }
+  }
+
   //Ohter
   .text {
     &__big {

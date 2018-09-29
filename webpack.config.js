@@ -12,7 +12,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CopyWebpackPluginConfig = new CopyWebpackPlugin([
-         {from:'./app/img',to:'img'}
+         {from:'./app/img',to:'img'},
+         {from:'./app/video',to:'video'}
      ]);
 
 module.exports = {
