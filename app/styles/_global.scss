@@ -154,6 +154,17 @@
     letter-spacing: 1px;
   }
 
+  &__normal {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 300;
+  }
+
+  &__small {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
   &__big {
     font-size: 40px;
     line-height: 56px;
