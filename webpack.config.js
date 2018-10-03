@@ -13,7 +13,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CopyWebpackPluginConfig = new CopyWebpackPlugin([
          {from:'./app/img',to:'img'},
-         {from:'./app/video',to:'video'}
+         {from:'./app/video',to:'video'},
+         {from:'./app/fonts',to:'fonts'}
      ]);
 
 module.exports = {
@@ -49,6 +50,10 @@ module.exports = {
         use: [
           { loader: "file-loader?name=img/[name].[ext]" }
         ]
+      },
+      {
+        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+        loader: 'file-loader'
       },
       {
         test: /\.js$/,

@@ -6,217 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__inner">
-        <div class="header__container">
-          <div class="header__top">
-            <div class="header__top__info-box">
-              <span>
-                <i class="fas fa-map-marker-alt"></i>
-                300 COLLINS ST MELBOURNE
-              </span>
-              <span>
-                <i class="fas fa-envelope"></i>
-                HELLO@PIVOT.NET
-              </span>
-            </div>
-            <div class="header__top__control-box">
-              <a href="/" class="button button--small button--primary header__top__control-box__item">LOGIN</a>
-              <a href="/" class="button button--small button--blue header__top__control-box__item">SIGNUP</a>
-              <a class="header__top__control-box__item" href="/"><img class="header__top__control-box__flag " src="/img/english.png" /></a>
-              <a class="header__top__control-box__item" href="/"><img class="header__top__control-box__flag" src="/img/brist.png" /></a>
-            </div>
+      <div class="header__topbar">
+        <div class="header__topbar__container">
+          <div class="header__topbar__logo">
+            <span>SHEN</span>
+            <span>LONG</span>
           </div>
-          <div class="header__nav">
-            <div class="header__nav__left">
-              <div class="header__nav__logo">
-                <img class="header__nav__logo__light" src="img/logo-light.png" />
-                <img class="header__nav__logo__dark" src="img/logo-dark.png" />
+          <div class="header__topbar__search-box">
+            <form class="form" action="#" name="search">
+              <div class="form__group">
+                <i class="fa fa-search"></i>
+                <input class="form__input" type="text" placeholder="WHAT YOU WILL LEARN NEXT">
               </div>
-              <ul class="menu">
-                <li class="menu__item menu__item--has-child">
-                  <a class="menu__item__link" href="#">HOME PAGES</a>
-                  <ul class="menu__subnav menu__subnav--multi">
-                    <div class="menu__subnav__col">
-                      <p class="menu__subnav__title">Home Layouts</p>
-                      <li><a href="/">Home Classic</a></li>
-                      <li><a href="/">Home Education</a></li>
-                      <li><a href="/">Home Business</a></li>
-                      <li><a href="/">Home Agency</a></li>
-                    </div>
-                    <div class="menu__subnav__col">
-                      <p class="menu__subnav__title">Home Layouts</p>
-                      <li><a href="/">Home Corporate</a></li>
-                      <li><a href="/">Home Personal</a></li>
-                      <li><a href="/">Service Launch</a></li>
-                      <li><a href="/">Product Launch</a></li>
-                    </div>
-                    <div class="menu__subnav__col">
-                      <p class="menu__subnav__title">Home Layouts</p>
-                      <li><a href="/">Home Classic</a></li>
-                      <li><a href="/">Home Education</a></li>
-                      <li><a href="/">Home Business</a></li>
-                      <li><a href="/">Home Agency</a></li>
-                    </div>
-                    <div class="menu__subnav__col">
-                      <a href="/" class="button button--blue-trans mgb-15">BUILD YOUR OWN</a>
-                      <a href="/" class="button button--lager button--blue">PURCHASE PIVOT</a>
-                    </div>
-                  </ul>
-                </li>
-                <li class="menu__item menu__item--has-child">
-                  <a class="menu__item__link" href="#">PAGES</a>
-                  <ul class="menu__subnav">
-                    <div class="menu__subnav__col">
-                      <p class="menu__subnav__title">Home Layouts</p>
-                      <li><a href="/">About Us</a></li>
-  										<li><a href="/">About Us 2</a></li>
-  										<li><a href="/">Services</a></li>
-  										<li><a href="/">Services 2</a></li>
-  										<li><a href="/">Login</a></li>
-  										<li><a href="/">404 Error</a></li>
-  										<li><a href="/">500 Error</a></li>
-                    </div>
-                  </ul>
-                </li>
-                <li class="menu__item menu__item--has-child">
-                  <a class="menu__item__link" href="#">BLOG</a></li>
-                <li class="menu__item menu__item--has-child">
-                  <a class="menu__item__link" href="#">PROJECTS</a></li>
-                <li class="menu__item menu__item--has-child">
-                  <a class="menu__item__link" href="#">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-            <div class="header__nav__right">
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-            <div class="header__nav__toogle" onclick="toogleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+              <input class="form__button" type="submit" value="SEARCH">
+            </form>
           </div>
-        <div class="header__main">
-          <p class="text__impress mgb-15 mgt-30">DISCOVER PIVOT TODAY</p>
-          <h1 class="text__big mgb-30">Themeforest's most popular HTML page building template is now even more powerful.</h1>
-          <p class="mgb-30">Tons of elements, Consistent style, Variant builder included.</p>
-          <div class="mgb-30">
-            <a href="/" class="button button--lager button--white mgr-15 mgl-15">CUSTOMIZE POVOT</a>
-            <a href="/" class="button button--lager button--blue mgt-15">PURCHASE PIVOT</a>
+          <div class="header__topbar__link">
+            <a href="#">SIGN UP</a>
+            <a href="#">SIGN IN</a>
           </div>
         </div>
       </div>
+      <div class="header__menu">
+        <div class="header__menu__container">
+          <a href="#" class="menu__item">
+            <span class="icon icon__catalog"></span>
+            <span>Catalog</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__series"></span>
+            <span>Series</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__skills"></span>
+            <span>Skill</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__podcast"></span>
+            <span>Podcast</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__discuss"></span>
+            <span>Discussion</span>
+          </a>
+        </div>
       </div>
     </header>
-    <section class="pure-text">
-      <div class="pure-text__container">
-        <h1 class="mgb-30">Learn why over 1,600 people love Pivot</h1>
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-          atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-          Et harum quidem rerum facilis est et expedita distinctio.
-        </p>
-      </div>
-    </section>
-    <section class="image-slider">
-      <div class="image-slider__left"></div>
-      <div class="image-slider__right">
-        <div class="image-slider__right__text">
-          <p class="text__normal mgb-30">
-            Pivot includes many element variations to showcase your content.
-          </p>
-          <p class="text__small">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-        </div>
-        <div class="image-slider__right__group">
-          <div class="image-slider__right__box">
-            <p class="mgb-20">
-              <i class="fab fa-phoenix-squadron"></i>
-              <span class="text-bold fz-16 mgl-10">Clear Documentation</span>
-            </p>
-            <p>Both Variant and Pivot come with clear concise docs written in plain English.</p>
-          </div>
-          <div class="image-slider__right__box">
-            <p class="mgb-20">
-              <i class="fab fa-amazon-pay"></i>
-              <span class="text-bold fz-16 mgl-10">Support Forum Access</span>
-            </p>
-            <p>Both Variant and Pivot come with clear concise docs written in plain English.</p>
-          </div>
-          <div class="image-slider__right__box">
-            <p class="mgb-20">
-              <i class="fas fa-atom"></i>
-              <span class="text-bold fz-16 mgl-10">Socially Aware</span>
-            </p>
-            <p>Both Variant and Pivot come with clear concise docs written in plain English.</p>
-          </div>
-          <div class="image-slider__right__box">
-            <p class="mgb-20">
-              <i class="fab fa-amazon"></i>
-              <span class="text-bold fz-16 mgl-10">Variant Builder</span>
-            </p>
-            <p>Both Variant and Pivot come with clear concise docs written in plain English.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="video-inline">
-      <div class="video-inline__left">
-        <h1 class="text__big mgb-30">Pivot + Variant make building your landing page a breeze.</h1>
-        <p class="mgb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <div class="mgb-30">
-          <a href="/" class="button button--lager button--blue-trans button--no-background mgr-15 mgl-15">SEE FEATURES</a>
-          <a href="/" class="button button--lager button--blue-trans button--no-border button--no-background mgt-15">LEARN MORE</a>
-        </div>
-      </div>
-      <div class="video-inline__right">
-        <video controls="">
-					<source type="video/webm" src="video/video.webm">
-					<source type="video/mp4" src="video/video.mp4">
-					<source type="video/ogg" src="video/video.ogv">
-				</video>
-      </div>
-    </section>
-    <footer class=footer>
-      <div class="footer__top">
-        <p class="text-big">Purchase Pivot. Start building today.</p>
-        <a href="/" class="button button--lager button--white button--no-background">LEARN MORE</a>
-      </div>
-      <div class="footer__bot">
-        <div class="footer__bot__menu">
-          <span>© Copright 2014 Medium Rare</span>
-          <a href="/">Terms Of Use</a>
-          <a href="/">Security Statement</a>
-          <a href="/">Sitemap</a>
-        </div>
-        <div class="footer__bot__icon">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-        </div>
-
-
-      </div>
+    <footer class="footer">
     </footer>
   </div>
-  <script type="text/javascript">
-    function toogleMenu() {
-        var menu = document.getElementsByClassName("menu")[0];
-        if (menu.style.display === "none") {
-            menu.style.display = "flex";
-        } else {
-            menu.style.display = "none";
-        }
-    }
-  </script>
 </body>
 </html>
