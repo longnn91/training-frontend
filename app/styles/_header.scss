@@ -1,104 +1,77 @@
 .header {
-  &__topbar {
-    background: $gray_weight_color;
-    padding: 20px;
-    min-height: 50px;
-    border-top: 2px solid $green_color;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, $green_light_opacity, $green_dark_opacity), url('../img/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: flex;
+  flex-direction: row;
 
-    &__container {
-      max-width: 1200px;
-      display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-      align-items: center;
-    }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 
     &__logo {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      flex-basis: 25%;
-
-      span:first-child {
-        color: $white_color;
-        border: 1px solid $green_color;
-        border-width: 3px 0 0 1px;
-        padding-left: 2px;
-      }
-
-      span:nth-child(2) {
-        color: $green_color;
-        border: 1px solid $white_color;
-        border-width: 0 1px 3px 0;
-        padding-right: 2px;
-      }
-    }
-
-    &__search-box {
-      background-color: $white_color;
-      flex-basis: 50%;
-      border-radius:  8px;
-      overflow: hidden;
-
-      .form {
-        display: flex;
-        &__group {
-          display: inline-block;
-          flex-basis: 80%;
-          display: flex;
-          align-items: center;
-
-          input {
-            flex-grow: 1;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            color: $gray_weight_color;
-
-            &::placeholder {
-              color: $gray_light_color;
-              font-size: 18px;
-            }
-          }
-
-          i {
-            font-size: 20px;
-            color: $gray_light_color;
-            padding: 0 20px;
-          }
-        }
-        &__button {
-          flex-basis: 20%;
-        }
-      }
-    }
-
-    &__link {
-      font-weight: bold;
-      font-size: 16px;
-      flex-basis: 25%;
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-        padding: 0 10px;
-      }
-
-      a:first-child {
-        color: $white_color;
-      }
-
-      a:nth-child(2) {
-        color: $green_color;
-      }
+      height: 30px;
     }
   }
 
-  &__menu {
-    &__container {
-      padding: 0 50px;
-      display: flex;
-      background: $gray_background_color;
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white_color;
+    text-transform: uppercase;
+
+    &__text-box {
+      margin-top: -50px;
     }
+  }
+
+  &__heading {
+    letter-spacing: 32px;
+    font-size: 60px;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 20px;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

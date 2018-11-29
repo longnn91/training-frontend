@@ -55,12 +55,8 @@ module.exports = {
         test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
         loader: 'file-loader'
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: "babel-loader"
-      }, {
-        test: /\.jsx?$/,
+       {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader"
       }

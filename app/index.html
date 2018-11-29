@@ -4,62 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <title>Learning SASS and BEM</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__topbar">
-        <div class="header__topbar__container">
-          <div class="header__topbar__logo">
-            <span>SHEN</span>
-            <span>LONG</span>
-          </div>
-          <div class="header__topbar__search-box">
-            <form class="form" action="#" name="search">
-              <div class="form__group">
-                <i class="fa fa-search"></i>
-                <input class="form__input" type="text" placeholder="WHAT YOU WILL LEARN NEXT">
-              </div>
-              <input class="form__button" type="submit" value="SEARCH">
-            </form>
-          </div>
-          <div class="header__topbar__link">
-            <a href="#">SIGN UP</a>
-            <a href="#">SIGN IN</a>
-          </div>
-        </div>
+  <header class="header">
+    <div class="header__top">
+      <img class="header__top__logo" src="../img/logo-white.png" alt="">
+      <div class="header__top__menu"></div>
+    </div>
+    <div class="header__content">
+      <div class="header__content__text-box">
+        <h1 class="header__heading">Outdoors</h1>
+        <p class="header__text">is where life happens</p>
       </div>
-      <div class="header__menu">
-        <div class="header__menu__container">
-          <a href="#" class="menu__item">
-            <span class="icon icon__catalog"></span>
-            <span>Catalog</span>
-          </a>
-          <a href="#" class="menu__item">
-            <span class="icon icon__series"></span>
-            <span>Series</span>
-          </a>
-          <a href="#" class="menu__item">
-            <span class="icon icon__skills"></span>
-            <span>Skill</span>
-          </a>
-          <a href="#" class="menu__item">
-            <span class="icon icon__podcast"></span>
-            <span>Podcast</span>
-          </a>
-          <a href="#" class="menu__item">
-            <span class="icon icon__discuss"></span>
-            <span>Discussion</span>
-          </a>
-        </div>
-      </div>
-    </header>
-    <footer class="footer">
-    </footer>
-  </div>
+    </div>
+  </header>
 </body>
 </html>
