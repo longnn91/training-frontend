@@ -1,8 +1,112 @@
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+body, input, button, select {
+  font-family: 'Space Mono', monospace;
+}
+
+.logo {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+  &--white {
+    background: $white_color;
+    margin-left: -5px;
+  }
+
+  &--red {
+    padding: 0px 10px;
+    background: $youtue_color;
+    color: $white_color;
+  }
+}
+
+.menu {
+  &__item {
+    font-size: 18px;
+    color: $text_color;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      background: $main_color;
+      border-bottom: 3px solid $main_color;
+      transition: width 0.4s ease-in-out;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+
+    &--active {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.flag {
+  padding: 0 5px;
+  background-color: red;
+  font-weight: 600;
+  font-size: 18px;
+  vertical-align: sub;
+
+  &--small {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &--red {
+    background-color: $main_color;
+    color: $white_color;
+  }
+}
+
+.form {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__body {
+    display: flex;
+
+    &--col {
+      flex-direction: column;
+    }
+  }
+}
+
+.input {
+  border: 1px solid $black_color;
+  padding: 10px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.button {
+  background: $gray_light_color;
+  color: $black_color;
   font-size: 16px;
-  line-height: 1.7;
-  color: $gray_color;
-  padding: 30px;
+  font-weight: bold;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.text {
+  &__title {
+    font-size: 26px;
+
+    &--sm {
+      font-size: 18px;
+    }
+  }
 }
