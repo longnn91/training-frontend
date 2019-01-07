@@ -1,136 +1,112 @@
-.button {
+body, input, button, select {
+  font-family: 'Space Mono', monospace;
+}
+
+.logo {
   display: inline-block;
-  border-color: $white_color;
-  color: $white_color;
-  min-width: 60px;
-  border-radius: 25px;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 15px 30px;
-  font-size: 11px;
-  border: 2px solid;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
 
-  &--blue {
-    border-color: $blue_color;
-    background: $blue_color;
-  }
-
-  &--blue-trans {
-    border-color: $blue_color;
+  &--white {
     background: $white_color;
-    color: $blue_color;
-
-    &:hover {
-      color: $white_color;
-      background: $blue_color;
-    }
+    margin-left: -5px;
   }
 
-  &--primary {
-    &:hover {
-      background: $blue_color;
-    }
-  }
-
-  &--small {
-    padding: 8px 18px;
-    font-size: 10px;
+  &--red {
+    padding: 0px 10px;
+    background: $youtue_color;
+    color: $white_color;
   }
 }
 
 .menu {
-  $root: &;
-  font-size: 11px;
-  color: $white_color;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  flex-basis: 80%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-
   &__item {
-    display: inline-block;
-    padding-right: 5px;
+    font-size: 18px;
+    color: $text_color;
+    cursor: pointer;
     position: relative;
+    display: inline-block;
+    margin: 0 5px;
 
-    &:first-child {
-      #{$root}__subnav {
-        left: -190px;
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      background: $main_color;
+      border-bottom: 3px solid $main_color;
+      transition: width 0.4s ease-in-out;
     }
 
-    &__link {
-      color:  $white_color;
-      padding-bottom: 40px;
-      display: inline-block;
-
-      &:hover + #{$root}__subnav {
-        display: grid;
-      }
+    &:hover:before {
+        width: 100%;
     }
 
-    &--has-child {
-      &::after {
-        content: '';
-          display: inline-block;
-          border: 1px solid $white_color;
-          border-width: 0 1px 1px 0;
-          padding: 2px;
-          transform: rotate(45deg);
-          margin-left: 8px;
-          vertical-align: top;
+    &--active {
+      &:before {
+        width: 100%;
       }
     }
   }
+}
 
-  &__subnav {
-    $root-subnav: &;
-    position: absolute;
-    top: 50px;
-    background: $white_color;
-    display: none;
-    grid-template-columns: repeat(4, 1fr);
-    transition: all 1s ease;
-    padding: 20px 0;
-    overflow: hidden;
+.flag {
+  padding: 0 5px;
+  background-color: red;
+  font-weight: 600;
+  font-size: 18px;
+  vertical-align: sub;
 
-    &:hover {
-      display: grid;
+  &--small {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &--red {
+    background-color: $main_color;
+    color: $white_color;
+  }
+}
+
+.form {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__body {
+    display: flex;
+
+    &--col {
+      flex-direction: column;
     }
+  }
+}
 
-    &__title {
-      font-weight: 700;
-      color: $black_color;
-      margin-bottom: 25px;
-    }
+.input {
+  border: 1px solid $black_color;
+  padding: 10px;
+  font-size: 12px;
+  margin: 5px 0;
+}
 
-    li > a {
-      color: $gray_color;
-      &:hover {
-        color: $black_color;
-      }
-    }
+.button {
+  background: $gray_light_color;
+  color: $black_color;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 20px;
+  cursor: pointer;
+}
 
-    li {
-      margin-top: 16px;
-    }
+.text {
+  &__title {
+    font-size: 26px;
 
-    &__col {
-      min-width: 180px;
-      padding: 10px 0;
-      padding-left: 30px;
-    }
-
-    &--multi {
-      width: calc(#{$max-width} - 30px);
-      #{$root-subnav}__col {
-        min-width: 290px;
-      }
+    &--sm {
+      font-size: 18px;
     }
   }
 }

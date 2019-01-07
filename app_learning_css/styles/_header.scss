@@ -1,0 +1,77 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, $green_light_opacity, $green_dark_opacity), url('../img/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: flex;
+  flex-direction: row;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+    &__logo {
+      height: 30px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white_color;
+    text-transform: uppercase;
+
+    &__text-box {
+      margin-top: -50px;
+    }
+  }
+
+  &__heading {
+    letter-spacing: 32px;
+    font-size: 60px;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 20px;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

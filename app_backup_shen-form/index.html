@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__topbar">
+        <div class="header__topbar__container">
+          <div class="header__topbar__logo">
+            <span>SHEN</span>
+            <span>LONG</span>
+          </div>
+          <div class="header__topbar__toggle" onclick="toogleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__topbar__search-box">
+            <form class="form" action="#" name="search">
+              <div class="form__group">
+                <i class="fa fa-search"></i>
+                <input class="form__input" type="text" placeholder="WHAT YOU WILL LEARN NEXT" />
+              </div>
+              <input class="form__button" type="submit" value="SEARCH" />
+            </form>
+          </div>
+          <div class="header__topbar__link">
+            <a href="#">SIGN UP</a>
+            <a href="#">SIGN IN</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="header__menu__container">
+          <a href="#" class="menu__item menu__item-add">
+            <span class="icon icon-none"></span>
+            <span>SIGN UP</span>
+          </a>
+          <a href="#" class="menu__item menu__item-add">
+            <span class="icon icon-none"></span>
+            <span>SIGN IN</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__catalog"></span>
+            <span>Catalog</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__series"></span>
+            <span>Series</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__skills"></span>
+            <span>Skill</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__podcast"></span>
+            <span>Podcast</span>
+          </a>
+          <a href="#" class="menu__item">
+            <span class="icon icon__discuss"></span>
+            <span>Discussion</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main main--center">
+        <section class="section-login form">
+          <form action="#" class="form__login form--vertical">
+            <div class="form__header">
+              <span class="form__header__title">Login form</span>
+              <span class="form__header__close-button"></span>
+            </div>
+            <input type="text" class="form__input" placeholder="Email...">
+            <input type="text" class="form__input" placeholder="Password...">
+            <input type="submit" class="form__button">
+          </form>
+        </section>
+    </div>
+    <footer class="footer">
+    </footer>
+  </div>
+  <script type="text/javascript">
+    function toogleMenu() {
+        var menu = document.getElementsByClassName("header__menu")[0];
+        if (menu.style.display == "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+  </script>
+</body>
+</html>
