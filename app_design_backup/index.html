@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Space+Mono:400,700|Open+Sans:400,700">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+        <div class="header__logo">
+            <span class="logo logo--red">SUB</span>
+            <span class="logo logo--white">SHARE</span>
+        </div>
+        <div class="header__menu menu">
+            <span class="menu__item menu__item--active">Home</span>
+            <span class="menu__item">Login</span>
+            <span class="menu__item">Register</span>
+            <span class="menu__item">About-Us</span>
+            <span class="menu__item">FAQ</span>
+        </div>
+    </header>
+    <div class="main">
+        <section class="main__section intro">
+            <h1 class="intro__title text__title">Get free subscribers</h1>
+            <div class="intro__content fz-14">
+                <p>Create or Login with Facebook <span class="flag flag--red">Step 1</span></p>
+                <p>Login youtube account <span class="flag flag--red">Step 2</span></p>
+                <p>Get point by view video or submit youtube channel <span class="flag flag--red">Step 3</span></p>
+                <p>Spent point to get view or subscribers <span class="flag flag--red">Step 4</span></p>
+            </div>
+        </section>
+        <section class="main__section login">
+            <form class="form login__form">
+                <h1 class="form__title">LOGIN</h1>
+                <div class="form__body form__body--col">
+                    <input class="input" type="text" name="username">
+                    <input class="input" type="password" name="Password">
+                </div>
+                <div class="form__footer mgt-30">
+                  <input class="button" type="submit" name="LOGIN" value="LOGIN">
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="video-intro">
+        <div class="video-intro__item">
+            <h2 class="text__title text__title--sm">Get point by view video</h2>
+            <div class="youtube-embed">
+                <iframe class="youtube-embed__frame"
+                  src="https://www.youtube.com/embed/hRO7KYf7LTo"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="video-intro__item">
+            <h2 class="text__title text__title--sm">Get point by subscrible</h2>
+            <div class="youtube-embed">
+                <iframe class="youtube-embed__frame"
+                  src="https://www.youtube.com/embed/hRO7KYf7LTo"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="video-intro__item">
+            <h2 class="text__title text__title--sm">Using point</h2>
+            <div class="youtube-embed">
+                <iframe class="youtube-embed__frame"
+                  src="https://www.youtube.com/embed/hRO7KYf7LTo"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    <div>
+    <footer class="footer">
+    </footer>
+  </div>
+  <script type="text/javascript">
+    function toogleMenu() {
+        var menu = document.getElementsByClassName("header__menu")[0];
+        if (menu.style.display == "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+  </script>
+</body>
+</html>

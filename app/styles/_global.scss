@@ -1,112 +1,48 @@
 body, input, button, select {
-  font-family: 'Space Mono', monospace;
-}
-
-.logo {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 2px;
-
-  &--white {
-    background: $white_color;
-    margin-left: -5px;
-  }
-
-  &--red {
-    padding: 0px 10px;
-    background: $youtue_color;
-    color: $white_color;
-  }
+  font-family: 'Open Sans', sans-serif;
 }
 
 .menu {
+  display: flex;
+  justify-content: space-between;
+
   &__item {
-    font-size: 18px;
-    color: $text_color;
+    font-size: 12px;
+    font-weight: 700;
+    color: $gray_color;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
+    transition: all 0.3s ease-out 0s;
 
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      background: $main_color;
-      border-bottom: 3px solid $main_color;
-      transition: width 0.4s ease-in-out;
-    }
-
-    &:hover:before {
-        width: 100%;
-    }
-
-    &--active {
-      &:before {
-        width: 100%;
-      }
+    &:hover {
+      color: $black_color;
     }
   }
-}
-
-.flag {
-  padding: 0 5px;
-  background-color: red;
-  font-weight: 600;
-  font-size: 18px;
-  vertical-align: sub;
-
-  &--small {
-    padding-left: 20px;
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  &--red {
-    background-color: $main_color;
-    color: $white_color;
-  }
-}
-
-.form {
-  &__title {
-    margin-bottom: 15px;
-  }
-
-  &__body {
-    display: flex;
-
-    &--col {
-      flex-direction: column;
-    }
-  }
-}
-
-.input {
-  border: 1px solid $black_color;
-  padding: 10px;
-  font-size: 12px;
-  margin: 5px 0;
-}
-
-.button {
-  background: $gray_light_color;
-  color: $black_color;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 8px 20px;
-  cursor: pointer;
 }
 
 .text {
-  &__title {
-    font-size: 26px;
+  color: $gray_color;
+  &__md {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
 
-    &--sm {
-      font-size: 18px;
-    }
+.btn {
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+
+  &__green {
+    background: $green_color;
+    color: $white_color;
+  }
+
+  &:hover {
+    background-color: $green_color_light;
+    border-color: transparent;
   }
 }

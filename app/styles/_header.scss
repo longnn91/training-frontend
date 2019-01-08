@@ -1,16 +1,47 @@
 .header {
-  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $red_light_color;
+  height: 40px;
+  max-width: $max-width;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 15px;
 
   &__logo {
-    flex-basis: 50%;
+    flex-basis: 25%;
+
+    &__img {
+      width: 115px;
+    }
   }
 
   &__menu {
     flex-basis: 50%;
-    text-align: right;
+    min-width: 300px;
+    max-width: 375px;
+  }
+
+  &__account {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &__item {
+      margin-left: 20px;
+    }
+
+    &__icon {
+      color: $gray_light_color;
+      font-size: 12px;
+    }
+
+    &__text {
+      font-size: 12px;
+      font-weight: 700;
+      color: $black_color;
+    }
   }
 }
