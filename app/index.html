@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo__img" src="img/logo-dark.svg" alt="">
-        </div>
-        <div class="header__menu menu">
-            <span class="menu__item menu__item--active">PRODUCT</span>
-            <span class="menu__item">PRICING</span>
-            <span class="menu__item">DOWNLOAD</span>
-            <span class="menu__item">BLOG</span>
-        </div>
-        <div class="header__account">
-            <div class="header__account__item">
-                <i class="header__account__icon fas fa-lock"></i>
-                <span class="header__account__text align-bt">LOG IN</span>
-             </div>
-            <button class="header__account__item btn btn__green">SIGN UP</button>
+        <div class="header__container">
+            <div class="header__logo">
+                <img class="header__logo__img" src="img/logo-dark.svg" alt="">
+            </div>
+            <div class="header__menu menu">
+                <span class="menu__item menu__item--active">PRODUCT</span>
+                <span class="menu__item">PRICING</span>
+                <span class="menu__item">DOWNLOAD</span>
+                <span class="menu__item">BLOG</span>
+            </div>
+            <div class="header__account">
+                <div class="header__account__item">
+                    <i class="header__account__icon fas fa-lock"></i>
+                    <span class="header__account__text align-bt">LOG IN</span>
+                 </div>
+                <button class="header__account__item btn btn--green">SIGN UP</button>
+            </div>
         </div>
     </header>
     <div class="main">
         <section class="product-section">
             <div class="product-section__list">
                 <div class="product">
-                    <div class="product__header"></div>
+                    <div class="product__header">
+                        <img class="product__thumb" src="img/img1" alt="" align="middle">
+                    </div>
+                    <div class="product__content">
+                        <div class="mgl-50 fz-20">Mặt bằng</div>
+                        <div class="product__price">
+                            <span>Acreage</span>
+                            <span>30 M<sup>2</sup></span>
+                          </div>
+                        <div class="product__price">30 Triệu</div>
+                        <div class="product__price">Quận Hải Châu</div>
+                    </div>
+                    <button class="product__button btn btn--green">DETAILS</button>
+                </div>
+                <div class="product">
+                    <div class="product__header flag flag--red"></div>
                     <div class="product__content"></div>
+                    <button class="product__button btn btn--green">DETAILS</button>
+                </div>
+                <div class="product">
+                    <div class="product__header flag flag--red"></div>
+                    <div class="product__content"></div>
+                    <button class="product__button btn btn--green">DETAILS</button>
+                </div>
+                <div class="product">
+                    <div class="product__header flag flag--red"></div>
+                    <div class="product__content"></div>
+                    <button class="product__button btn btn--green">DETAILS</button>
                 </div>
             </div>
         </section>

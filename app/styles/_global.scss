@@ -36,13 +36,13 @@ body, input, button, select {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
 
-  &__green {
+  &--green {
     background: $green_color;
     color: $white_color;
-  }
 
-  &:hover {
-    background-color: $green_color_light;
-    border-color: transparent;
+    &:hover {
+      background-color: $green_color_light;
+      border-color: transparent;
+    }
   }
 }
