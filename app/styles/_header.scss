@@ -3,7 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
- 
+  padding: 15px 0;
+  background: $white_color;
+  box-shadow: $white_color 0px 10px 40px 0px;
+  z-index: $zindex-max;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -12,7 +16,6 @@
     max-width: $max-width;
     padding: 0 20px;
     margin: 0 auto;
-    margin-top: 15px;
   }
 
   &__logo {
