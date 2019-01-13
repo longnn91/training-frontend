@@ -1,7 +1,7 @@
 .main {
-  background: $gray_light_color;
+  // background: $gray_light_color;
   margin-top: 100px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 40px 0px;
+  // box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 40px 0px;
   min-height: calc(100vh - 60px);
 }
 
@@ -12,7 +12,7 @@
   display: flex;
 
   &__search {
-    margin: 30px 0;
+    margin-bottom: 30px;
 
     &__form {
       display: flex;
@@ -35,13 +35,13 @@
   }
 
   &__list {
-    flex-basis: 75%;
+    flex-basis: 78%;
     margin-right: 10px;
   }
 
   &__banner {
-    flex-basis: 25%;
-    background: $white_color;
+    flex-basis: 22%;
+    background: $gray_light_color;
   }
 }
 
@@ -60,67 +60,5 @@
   &--red:after {
     border-top: 40px solid #E74C3C;
     border-right: 40px solid transparent;
-  }
-}
-
-.product {
-  background: $white_color;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px 5px 40px 0px;
-  max-width: 920px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  width: 100%;
-  position: relative;
-
-  .flag:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &__thumb {
-    width: auto;
-    height: 100%;
-  }
-
-  &__basic {
-    display: flex;
-  }
-
-  &__detail {
-    height: 400px;
-    background: $gray_light_2_color;
-    display: flex;
-
-    &__galaxy {
-      border: 1px solid red;
-      min-width: 500px;
-      flex-basis: 65%;
-    }
-
-    &__info {
-      flex-grow: 1;
-      border: 1px solid green;
-    }
-  }
-
-  &__header {
-    height: 140px;
-    padding: 10px;
-  }
-
-  &__content {
-    background: $gray_light_2_color;
-    flex-grow: 1;
-  }
-
-  &__button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 24px;
-    width: 90px;
-    font-size: 12px;
-    border-radius: 0;
   }
 }
